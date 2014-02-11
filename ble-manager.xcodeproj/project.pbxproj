@@ -48,18 +48,22 @@
 		DB34D352DF5DA577FB0492E8 /* UIColor+XBAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34DA8FE87E102B88338E3B /* UIColor+XBAdditions.m */; };
 		DB34D36DA7EA96C9FB4D0F9B /* Lato-LigIta.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34D9D907B789F618C4733E /* Lato-LigIta.ttf */; };
 		DB34D3ADB5B38DE3F2A72814 /* Cabin-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34D23B3DB10F4765FF5BBE /* Cabin-MediumItalic.ttf */; };
+		DB34D3EEEAE306DEF592854D /* LXPeripheralService.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34D310535F4D17229CF90F /* LXPeripheralService.m */; };
 		DB34D3F4EE5438BE4A65C18E /* LXPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34D946A03C4BB956210196 /* LXPeripheral.m */; };
 		DB34D414B52329EC12A4AB89 /* Lato-Bol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34D78ADC2B34CE133459CB /* Lato-Bol.ttf */; };
 		DB34D446D26EA98FAD746217 /* Cabin-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34DC9AA4BD6F1E6DDD41B4 /* Cabin-SemiBold.ttf */; };
 		DB34D457D33FA4B67CE3F639 /* LXConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34DAAEC3C300D5115F9989 /* LXConstant.m */; };
 		DB34D460865F2F464DAB9204 /* Lato-Hai.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34DBAE1655D3A7FD0A300E /* Lato-Hai.ttf */; };
+		DB34D46E91DF175CDF0A2B80 /* LXPeripheralServiceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34D55D1EDA704697EFFE3B /* LXPeripheralServiceTableViewCell.m */; };
 		DB34D477E8AD753BA47A23A7 /* Cabin-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34DB82EBC071DEADF61413 /* Cabin-Medium.ttf */; };
 		DB34D4CBC56D0A32FF75BCD4 /* Cabin-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34D240F674A1868B1BC0B1 /* Cabin-SemiBoldItalic.ttf */; };
 		DB34D546E488147A4A5B4269 /* Cabin-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34D240F674A1868B1BC0B1 /* Cabin-SemiBoldItalic.ttf */; };
 		DB34D5C330094CA668155E68 /* Cabin-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34D2CCDD80F4EBD33F8987 /* Cabin-BoldItalic.ttf */; };
 		DB34D676562D6C922B3D6184 /* LXPeripheralViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34D0B6437882D38F4D2390 /* LXPeripheralViewCell.m */; };
+		DB34D68B29CB7FBF9EECF2EF /* LXPeripheralServiceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34D55D1EDA704697EFFE3B /* LXPeripheralServiceTableViewCell.m */; };
 		DB34D6BBD5476816A202859C /* LXScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34DEFE7EFE6A928C137CCF /* LXScanViewController.m */; };
 		DB34D6F75F670CEF1E1FD522 /* Lato-Hai.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34DBAE1655D3A7FD0A300E /* Lato-Hai.ttf */; };
+		DB34D73A4B3A90C4662647C1 /* LXPeripheralServicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34D170235208EE3A85D38A /* LXPeripheralServicesViewController.m */; };
 		DB34D73FB6F265F8908553C3 /* Cabin-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34DA0D5ECB5E3BDC0D83A0 /* Cabin-Bold.ttf */; };
 		DB34D750F232BBA506A75657 /* UIColor+XBAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34DA8FE87E102B88338E3B /* UIColor+XBAdditions.m */; };
 		DB34D7CD9056AAD99CEC25C8 /* Lato-RegIta.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34D6321659D7C5626A3B3B /* Lato-RegIta.ttf */; };
@@ -67,10 +71,14 @@
 		DB34D820BD9F3774375008AA /* Cabin-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34D2192721EF56BEDD0FE3 /* Cabin-Regular.ttf */; };
 		DB34D87967D4FE5447A9111C /* Lato-Reg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34D1D265BA56D328B49F32 /* Lato-Reg.ttf */; };
 		DB34D8827CB9F476EC763243 /* Lato-BlaIta.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34D1ECDD6CC1B65132771F /* Lato-BlaIta.ttf */; };
+		DB34D885D95B1BFB604F0657 /* LXPeripheralServicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34D170235208EE3A85D38A /* LXPeripheralServicesViewController.m */; };
 		DB34D8C78CFA5BFB55913049 /* LXPeripheralViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34D0B6437882D38F4D2390 /* LXPeripheralViewCell.m */; };
+		DB34D8C9A77F9016DE3989F9 /* LXTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34D45F8175FAFBB25309B4 /* LXTableViewCell.m */; };
 		DB34D8F776A8D0938B4FB3CB /* Lato-Bla.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34DB497D65B3DEE63C5945 /* Lato-Bla.ttf */; };
 		DB34D9018A04C9DA9DF73D48 /* LXPeripheralView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34DFC14AB290876A2970A8 /* LXPeripheralView.m */; };
 		DB34D956CC39A67AF68CD332 /* Lato-BolIta.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34D1D4941F31A4DC28B65D /* Lato-BolIta.ttf */; };
+		DB34D97D33009FB033A656D0 /* services.json in Resources */ = {isa = PBXBuildFile; fileRef = DB34DCBA2EB45AACE7C42965 /* services.json */; };
+		DB34D9D5C239DFE5093EAB0D /* services.json in Resources */ = {isa = PBXBuildFile; fileRef = DB34DCBA2EB45AACE7C42965 /* services.json */; };
 		DB34DA2C2F41164003E562BC /* Cabin-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34DB82EBC071DEADF61413 /* Cabin-Medium.ttf */; };
 		DB34DA83476CE5E6F0C282AF /* LXPeripheralsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34D57156351E1515916F80 /* LXPeripheralsViewController.m */; };
 		DB34DB6084059D008B847A20 /* Lobster.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34DC7DF2AE2FA17721DD78 /* Lobster.ttf */; };
@@ -84,8 +92,10 @@
 		DB34DD908B40D40DEAA48ADC /* LXDiscoveryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34DA8A8868465DD0B7B280 /* LXDiscoveryManager.m */; };
 		DB34DE2E6C2C948DB5FB08E8 /* LXPeripheralsFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34DD87ED22EB5C752B8624 /* LXPeripheralsFlowLayout.m */; };
 		DB34DE399C4839A1B30131ED /* Lato-HaiIta.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34DBAD5AB6F21EC3557396 /* Lato-HaiIta.ttf */; };
+		DB34DE7839033F28D4CA3FF8 /* LXPeripheralService.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34D310535F4D17229CF90F /* LXPeripheralService.m */; };
 		DB34DE8A7214A0BD851DB7CD /* LXLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34D7D26E14EB66DFDE23EF /* LXLogger.m */; };
 		DB34DEE09551602F4321484C /* LXPeripheralsFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34DD87ED22EB5C752B8624 /* LXPeripheralsFlowLayout.m */; };
+		DB34DEF2C344446C6E2EFBA1 /* LXTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34D45F8175FAFBB25309B4 /* LXTableViewCell.m */; };
 		DB34DF2209F3E7A9D391D84D /* LXLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34D7D26E14EB66DFDE23EF /* LXLogger.m */; };
 		DB34DF53F85A8E1DA4DEE6A7 /* LXPeripheralView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34DFC14AB290876A2970A8 /* LXPeripheralView.m */; };
 		DB34DF555B61D61648B31044 /* Cabin-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34D23B3DB10F4765FF5BBE /* Cabin-MediumItalic.ttf */; };
@@ -143,6 +153,8 @@
 		DB34D07160DE3A54B1DFB61C /* LXPeripheralViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXPeripheralViewCell.h; sourceTree = "<group>"; };
 		DB34D0B0352F2F5821D17E30 /* LXLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXLogger.h; sourceTree = "<group>"; };
 		DB34D0B6437882D38F4D2390 /* LXPeripheralViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXPeripheralViewCell.m; sourceTree = "<group>"; };
+		DB34D0CD65F058709164A532 /* LXTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LXTableViewCell.h; path = "ble-manager/Views/LXTableViewCell.h"; sourceTree = SOURCE_ROOT; };
+		DB34D170235208EE3A85D38A /* LXPeripheralServicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXPeripheralServicesViewController.m; sourceTree = "<group>"; };
 		DB34D1D265BA56D328B49F32 /* Lato-Reg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Lato-Reg.ttf"; sourceTree = "<group>"; };
 		DB34D1D4941F31A4DC28B65D /* Lato-BolIta.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Lato-BolIta.ttf"; sourceTree = "<group>"; };
 		DB34D1ECDD6CC1B65132771F /* Lato-BlaIta.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Lato-BlaIta.ttf"; sourceTree = "<group>"; };
@@ -152,15 +164,20 @@
 		DB34D23B3DB10F4765FF5BBE /* Cabin-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Cabin-MediumItalic.ttf"; sourceTree = "<group>"; };
 		DB34D240F674A1868B1BC0B1 /* Cabin-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Cabin-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		DB34D2CCDD80F4EBD33F8987 /* Cabin-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Cabin-BoldItalic.ttf"; sourceTree = "<group>"; };
+		DB34D310535F4D17229CF90F /* LXPeripheralService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXPeripheralService.m; sourceTree = "<group>"; };
+		DB34D45F8175FAFBB25309B4 /* LXTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LXTableViewCell.m; path = "ble-manager/Views/LXTableViewCell.m"; sourceTree = SOURCE_ROOT; };
 		DB34D4A3828E12255F598190 /* Cabin-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Cabin-Italic.ttf"; sourceTree = "<group>"; };
 		DB34D4D069CDD408FAAC1FF9 /* Lato-Lig.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Lato-Lig.ttf"; sourceTree = "<group>"; };
+		DB34D4FD545AC9C8FC37A6E5 /* LXPeripheralService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXPeripheralService.h; sourceTree = "<group>"; };
 		DB34D5253B2738FACA7DC3C7 /* UIColor+XBAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+XBAdditions.h"; sourceTree = "<group>"; };
+		DB34D55D1EDA704697EFFE3B /* LXPeripheralServiceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXPeripheralServiceTableViewCell.m; sourceTree = "<group>"; };
 		DB34D57156351E1515916F80 /* LXPeripheralsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXPeripheralsViewController.m; sourceTree = "<group>"; };
 		DB34D6321659D7C5626A3B3B /* Lato-RegIta.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Lato-RegIta.ttf"; sourceTree = "<group>"; };
 		DB34D6A159A776983DD52A9E /* LXPeripheralDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXPeripheralDetailsViewController.h; sourceTree = "<group>"; };
 		DB34D78ADC2B34CE133459CB /* Lato-Bol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Lato-Bol.ttf"; sourceTree = "<group>"; };
 		DB34D7C6543C3F83457B0DB8 /* LXPeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXPeripheral.h; sourceTree = "<group>"; };
 		DB34D7D26E14EB66DFDE23EF /* LXLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXLogger.m; sourceTree = "<group>"; };
+		DB34D89A610061220467DDD0 /* LXPeripheralServiceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXPeripheralServiceTableViewCell.h; sourceTree = "<group>"; };
 		DB34D946A03C4BB956210196 /* LXPeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXPeripheral.m; sourceTree = "<group>"; };
 		DB34D9D907B789F618C4733E /* Lato-LigIta.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Lato-LigIta.ttf"; sourceTree = "<group>"; };
 		DB34DA0D5ECB5E3BDC0D83A0 /* Cabin-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Cabin-Bold.ttf"; sourceTree = "<group>"; };
@@ -174,12 +191,15 @@
 		DB34DB82EBC071DEADF61413 /* Cabin-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Cabin-Medium.ttf"; sourceTree = "<group>"; };
 		DB34DBAD5AB6F21EC3557396 /* Lato-HaiIta.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Lato-HaiIta.ttf"; sourceTree = "<group>"; };
 		DB34DBAE1655D3A7FD0A300E /* Lato-Hai.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Lato-Hai.ttf"; sourceTree = "<group>"; };
+		DB34DBF3079AFD6B3338D37A /* LXPeripheralServicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXPeripheralServicesViewController.h; sourceTree = "<group>"; };
 		DB34DC1BF3AC426BE98FEECA /* LXScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXScanViewController.h; sourceTree = "<group>"; };
 		DB34DC64200F3138E1B0D329 /* LXConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXConstant.h; sourceTree = "<group>"; };
 		DB34DC7DF2AE2FA17721DD78 /* Lobster.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = Lobster.ttf; sourceTree = "<group>"; };
 		DB34DC91D518080CBA763F2A /* LXPeripheralsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXPeripheralsViewController.h; sourceTree = "<group>"; };
 		DB34DC9AA4BD6F1E6DDD41B4 /* Cabin-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Cabin-SemiBold.ttf"; sourceTree = "<group>"; };
+		DB34DCBA2EB45AACE7C42965 /* services.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = services.json; sourceTree = "<group>"; };
 		DB34DCE90CE8E7A8D7DC45CB /* LXPeripheralView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXPeripheralView.h; sourceTree = "<group>"; };
+		DB34DD8257EDAF8A25769638 /* LXHeightForRowCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LXHeightForRowCellDelegate.h; path = "ble-manager/Views/LXHeightForRowCellDelegate.h"; sourceTree = SOURCE_ROOT; };
 		DB34DD87ED22EB5C752B8624 /* LXPeripheralsFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXPeripheralsFlowLayout.m; sourceTree = "<group>"; };
 		DB34DED3BEA8C704B8BE1381 /* LXDiscoveryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDiscoveryViewController.h; sourceTree = "<group>"; };
 		DB34DEFE42A72139E6315585 /* LXLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXLogging.h; sourceTree = "<group>"; };
@@ -315,6 +335,7 @@
 			children = (
 				547DE4BE18A7C482000EFAFD /* Graphics */,
 				DB34D196FC65CD3A75BDA51A /* Fonts */,
+				DB34D3C365613208195000C2 /* Data */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -371,8 +392,30 @@
 				DB34D6A159A776983DD52A9E /* LXPeripheralDetailsViewController.h */,
 				DB34DAA7EB840C38DC960753 /* LXPeripheralHeaderViewController.m */,
 				DB34DB23551545C524A2D7DD /* LXPeripheralHeaderViewController.h */,
+				DB34D170235208EE3A85D38A /* LXPeripheralServicesViewController.m */,
+				DB34DBF3079AFD6B3338D37A /* LXPeripheralServicesViewController.h */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DB34D3C365613208195000C2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DB34DCBA2EB45AACE7C42965 /* services.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		DB34D4337776B275B8D1FB09 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DB34D55D1EDA704697EFFE3B /* LXPeripheralServiceTableViewCell.m */,
+				DB34D89A610061220467DDD0 /* LXPeripheralServiceTableViewCell.h */,
+				DB34DD8257EDAF8A25769638 /* LXHeightForRowCellDelegate.h */,
+				DB34D0CD65F058709164A532 /* LXTableViewCell.h */,
+				DB34D45F8175FAFBB25309B4 /* LXTableViewCell.m */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		DB34D6A97D80346594536CA7 /* Models */ = {
@@ -380,6 +423,8 @@
 			children = (
 				DB34D946A03C4BB956210196 /* LXPeripheral.m */,
 				DB34D7C6543C3F83457B0DB8 /* LXPeripheral.h */,
+				DB34D310535F4D17229CF90F /* LXPeripheralService.m */,
+				DB34D4FD545AC9C8FC37A6E5 /* LXPeripheralService.h */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -410,6 +455,7 @@
 				DB34DCE90CE8E7A8D7DC45CB /* LXPeripheralView.h */,
 				DB34D0B6437882D38F4D2390 /* LXPeripheralViewCell.m */,
 				DB34D07160DE3A54B1DFB61C /* LXPeripheralViewCell.h */,
+				DB34D4337776B275B8D1FB09 /* Cells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -524,6 +570,7 @@
 				DB34D5C330094CA668155E68 /* Cabin-BoldItalic.ttf in Resources */,
 				DB34DF555B61D61648B31044 /* Cabin-MediumItalic.ttf in Resources */,
 				DB34D546E488147A4A5B4269 /* Cabin-SemiBoldItalic.ttf in Resources */,
+				DB34D97D33009FB033A656D0 /* services.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,6 +598,7 @@
 				DB34DBACBA0F584997C024F1 /* Cabin-BoldItalic.ttf in Resources */,
 				DB34D3ADB5B38DE3F2A72814 /* Cabin-MediumItalic.ttf in Resources */,
 				DB34D4CBC56D0A32FF75BCD4 /* Cabin-SemiBoldItalic.ttf in Resources */,
+				DB34D9D5C239DFE5093EAB0D /* services.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,6 +700,10 @@
 				DB34DEE09551602F4321484C /* LXPeripheralsFlowLayout.m in Sources */,
 				DB34DBDE0B54388B224FC1AA /* LXPeripheralDetailsViewController.m in Sources */,
 				DB34D02C5E0ADE6CF99F4DA8 /* LXPeripheralHeaderViewController.m in Sources */,
+				DB34D68B29CB7FBF9EECF2EF /* LXPeripheralServiceTableViewCell.m in Sources */,
+				DB34DEF2C344446C6E2EFBA1 /* LXTableViewCell.m in Sources */,
+				DB34D885D95B1BFB604F0657 /* LXPeripheralServicesViewController.m in Sources */,
+				DB34D3EEEAE306DEF592854D /* LXPeripheralService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -672,6 +724,10 @@
 				DB34DE2E6C2C948DB5FB08E8 /* LXPeripheralsFlowLayout.m in Sources */,
 				DB34D026FD760623454B6C9B /* LXPeripheralDetailsViewController.m in Sources */,
 				DB34D1689DAF2C77E773C4E1 /* LXPeripheralHeaderViewController.m in Sources */,
+				DB34D46E91DF175CDF0A2B80 /* LXPeripheralServiceTableViewCell.m in Sources */,
+				DB34D8C9A77F9016DE3989F9 /* LXTableViewCell.m in Sources */,
+				DB34D73A4B3A90C4662647C1 /* LXPeripheralServicesViewController.m in Sources */,
+				DB34DE7839033F28D4CA3FF8 /* LXPeripheralService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

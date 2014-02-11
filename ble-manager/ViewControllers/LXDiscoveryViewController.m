@@ -106,13 +106,26 @@
 
 - (void)onShowPeripheralsViewController
 {
-    [UIView animateWithDuration:0.2
-                          delay:0.0
-                        options:UIViewAnimationOptionCurveEaseOut
-                     animations:^{
-                         self.peripheralsViewControllerTopConstraint.constant = 0;
-                         [self.view layoutIfNeeded];
-                     } completion:^(BOOL finished) {}];
+    if (self.peripheralsViewControllerTopConstraint.constant == 0) {
+        [UIView animateWithDuration:0.3
+                              delay:0.0
+                            options:UIViewAnimationOptionCurveEaseOut
+                         animations:^{
+                             self.peripheralsViewControllerTopConstraint.constant = 464;
+                             self.scanViewControllerHeightConstraint.constant = 464;
+                             [self.view layoutIfNeeded];
+                         } completion:^(BOOL finished) {}];
+
+    }
+    else {
+        [UIView animateWithDuration:0.2
+                              delay:0.0
+                            options:UIViewAnimationOptionCurveEaseOut
+                         animations:^{
+                             self.peripheralsViewControllerTopConstraint.constant = 0;
+                             [self.view layoutIfNeeded];
+                         } completion:^(BOOL finished) {}];
+    }
 }
 
 - (void)onHidePeripheralsViewController
@@ -136,19 +149,6 @@
                          self.scanViewControllerHeightConstraint.constant = 0;
                          [self.view layoutIfNeeded];
                      } completion:^(BOOL finished) {}];
-}
-
-- (BOOL)navigationBar:(UINavigationBar *)navigationBar shouldPopItem:(UINavigationItem *)item
-{
-    [UIView animateWithDuration:0.3
-                          delay:0.0
-                        options:UIViewAnimationOptionCurveEaseOut
-                     animations:^{
-                         self.peripheralsViewControllerTopConstraint.constant = 464;
-                         self.scanViewControllerHeightConstraint.constant = 464;
-                         [self.view layoutIfNeeded];
-                     } completion:^(BOOL finished) {}];
-    return YES;
 }
 
 @end

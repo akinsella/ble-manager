@@ -3,31 +3,27 @@
 // Copyright (c) 2014 Alexis Kinsella. All rights reserved.
 //
 
-#import "LXPeripheralHeaderViewController.h"
-#import "LXConstant.h"
+#import "LXPeripheralServicesViewController.h"
+#import "XBReloadableArrayDataSource.h"
+#import "LXPeripheralService.h"
+#import "LXPeripheralServiceTableViewCell.h"
+#import "XBBundleJsonDataLoader.h"
 #import "LXPeripheral.h"
-#import "UIColor+XBAdditions.h"
+#import "LXConstant.h"
 
+@interface LXPeripheralServicesViewController ()
 
-@interface LXPeripheralHeaderViewController ()
+@property (nonatomic, strong)XBReloadableArrayDataSource *peripheralServicesDataSource;
 
 @property (nonatomic, strong)id peripheralSelectedNotificationObserver;
 
 @end
 
-
-@implementation LXPeripheralHeaderViewController
+@implementation LXPeripheralServicesViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    UISwipeGestureRecognizer *swipeUpGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleGestureForControllerView:)];
-    swipeUpGestureRecognizer.direction = UISwipeGestureRecognizerDirectionUp;
-    [self.view addGestureRecognizer:swipeUpGestureRecognizer];
-    UISwipeGestureRecognizer *swipeDownGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleGestureForControllerView:)];
-    swipeDownGestureRecognizer.direction = UISwipeGestureRecognizerDirectionDown;
-    [self.view addGestureRecognizer:swipeDownGestureRecognizer];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -67,21 +63,26 @@
 
 - (void)onPeripheralSelected:(LXPeripheral *)lxPeripheral
 {
-    self.nameLabel.text = lxPeripheral.name;
-    self.uuidLabel.text = lxPeripheral.identifier;
-    self.rssiLabel.text = [lxPeripheral.rssi stringValue];
-    self.view.backgroundColor = [UIColor colorWithHex:lxPeripheral.hexColor];
+    id<XBDataLoader> dataLoader = [XBBundleJsonDataLoader dataLoaderWithResourcePath:@"services" resourceType:@"json"];
+    self.peripheralServicesDataSource = [XBReloadableArrayDataSource dataSourceWithDataLoader:dataLoader];
+
+    [self.peripheralServicesTableView reloadData];
 }
 
-- (void)handleGestureForControllerView:(UISwipeGestureRecognizer *)sender
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if (sender.direction == UISwipeGestureRecognizerDirectionDown) {
-        [[NSNotificationCenter defaultCenter] postNotificationName:LXShowPeripheralsViewControllerNotification object:self userInfo:@{}];
-    }
-    else {
-        [[NSNotificationCenter defaultCenter] postNotificationName:LXHidePeripheralsViewControllerNotification object:self userInfo:@{}];
-    }
+    return self.peripheralServicesDataSource ? self.peripheralServicesDataSource.count : 0;
 }
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"PeripheralServiceCell";
+
+    LXPeripheralService *peripheralService = self.peripheralServicesDataSource[(NSUInteger) indexPath.row];
+    LXPeripheralServiceTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    [cell configureWithPeripheralService:peripheralService forIndexPath:indexPath];
+
+    return cell;
+}
 
 @end

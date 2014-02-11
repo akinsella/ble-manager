@@ -8,6 +8,8 @@
 
 @interface LXPeripheralHeaderViewController : UIViewController
 
-
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *uuidLabel;
+@property (weak, nonatomic) IBOutlet UILabel *rssiLabel;
 
 @end

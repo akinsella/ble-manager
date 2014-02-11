@@ -39,17 +39,19 @@ static NSString *const kNoName = @"No Name";
 
 + (instancetype)peripheralWithIdentifier:(NSString *)identifier name:(NSString *)name advertisementData:(NSDictionary *)advertisementData rssi:(NSNumber *)rssi hexColor:(NSString *)hexColor date:(NSDate *)date
 {
-    return [[self alloc] initWithIdentifier:identifier name:name advertisementData:advertisementData rssi:rssi  hexColor:hexColor date:date];
+    return [[self alloc] initWithIdentifier:identifier name:name advertisementData:advertisementData rssi:rssi hexColor:hexColor date:date];
 }
 
 + (instancetype)peripheralCBPeripheral:(CBPeripheral *)cbPeripheral advertisementData:(NSDictionary *)advertisementData rssi:(NSNumber *)rssi hexColor:(NSString *)hexColor date:(NSDate *)date
-{    return [LXPeripheral peripheralWithIdentifier:cbPeripheral.identifier.UUIDString
-                                              name:cbPeripheral.name ? cbPeripheral.name : kNoName
-                                 advertisementData: advertisementData
-                                              rssi: rssi
-                                          hexColor: hexColor
-                                              date:date];
+{
+    return [LXPeripheral peripheralWithIdentifier:cbPeripheral.identifier.UUIDString
+                                             name:cbPeripheral.name ? cbPeripheral.name : kNoName
+                                advertisementData:advertisementData
+                                             rssi:rssi
+                                         hexColor:hexColor
+                                             date:date];
 }
+
 - (void)updatePeripheralWithCBPeripheral:(CBPeripheral *)cbPeripheral advertisementData:(NSDictionary *)advertisementData rssi:(NSNumber *)rssi
 {
     self.identifier = cbPeripheral.identifier.UUIDString;
@@ -67,7 +69,8 @@ static NSString *const kNoName = @"No Name";
 }
 
 
-- (NSString *)description {
+- (NSString *)description
+{
     NSMutableString *description = [NSMutableString stringWithFormat:@"<%@: ", NSStringFromClass([self class])];
 
     [description appendString:[NSString stringWithFormat:@" identifier: '%@'", self.identifier]];

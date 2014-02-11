@@ -17,5 +17,6 @@ extern NSString *const LXPeripheralsViewControllerSegue;
 extern NSString *const LXPeripheralDetailsViewControllerSegue;
 
 extern NSString *const LXPeripheralHeaderViewControllerSegue;
+extern NSString *const LXPeripheralServicesViewControllerSegue;
 
 extern NSString *const LXPeripheralSelectedNotification;

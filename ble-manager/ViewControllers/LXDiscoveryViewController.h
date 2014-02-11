@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Alexis Kinsella. All rights reserved.
 //
 
-@interface LXDiscoveryViewController : UIViewController<UINavigationBarDelegate>
+@interface LXDiscoveryViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *peripheralsViewControllerTopConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *scanViewControllerHeightConstraint;

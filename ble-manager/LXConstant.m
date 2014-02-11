@@ -13,5 +13,6 @@ NSString *const LXPeripheralsViewControllerSegue = @"PeripheralsViewController";
 NSString *const LXPeripheralDetailsViewControllerSegue = @"PeripheralDetailsViewController";
 
 NSString *const LXPeripheralHeaderViewControllerSegue = @"LXPeripheralHeaderViewControllerSegue";
+NSString *const LXPeripheralServicesViewControllerSegue = @"LXPeripheralServicesViewControllerSegue";
 
 NSString *const LXPeripheralSelectedNotification = @"LXPeripheralSelectedNotification";

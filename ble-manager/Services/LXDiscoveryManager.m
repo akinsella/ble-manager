@@ -147,7 +147,7 @@
     else {
         srand48(time(0));
         for (LXPeripheral *lxPeripheral in self.mockLxPeripherals) {
-            CGFloat randValue = drand48() * arc4random_uniform(8) + drand48() * arc4random_uniform(8);
+            CGFloat randValue = drand48() * arc4random_uniform(6) + drand48() * arc4random_uniform(6);
             LXLogDebug(@"Rand Value: %f", randValue);
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW,randValue * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
                 if (self.isScanning) {

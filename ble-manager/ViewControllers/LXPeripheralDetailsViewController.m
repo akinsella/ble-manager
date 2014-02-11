@@ -6,12 +6,12 @@
 #import "LXPeripheralDetailsViewController.h"
 #import "LXPeripheralHeaderViewController.h"
 #import "LXConstant.h"
+#import "LXPeripheralServicesViewController.h"
 
 @interface LXPeripheralDetailsViewController ()
 
-
 @property (nonatomic, strong) LXPeripheralHeaderViewController *peripheralHeaderViewController;
-
+@property (nonatomic, strong) LXPeripheralServicesViewController *peripheralServicesViewController;
 
 @end
 
@@ -54,6 +54,9 @@
 
     if ([segueIdentifier isEqualToString:LXPeripheralHeaderViewControllerSegue]) {
         self.peripheralHeaderViewController = segue.destinationViewController;
+    }
+    if ([segueIdentifier isEqualToString:LXPeripheralServicesViewControllerSegue]) {
+        self.peripheralServicesViewController = segue.destinationViewController;
     }
     else {
         LXLogDebug(@"Segue with identifier was not handled: '%@'", segueIdentifier);
