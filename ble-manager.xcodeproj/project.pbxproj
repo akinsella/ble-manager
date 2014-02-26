@@ -67,6 +67,7 @@
 		DB34D73FB6F265F8908553C3 /* Cabin-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34DA0D5ECB5E3BDC0D83A0 /* Cabin-Bold.ttf */; };
 		DB34D750F232BBA506A75657 /* UIColor+XBAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34DA8FE87E102B88338E3B /* UIColor+XBAdditions.m */; };
 		DB34D7CD9056AAD99CEC25C8 /* Lato-RegIta.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34D6321659D7C5626A3B3B /* Lato-RegIta.ttf */; };
+		DB34D7FF593F1BC7162773AE /* LXPeripheralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34D1F48C53F7BA7E9AD622 /* LXPeripheralManager.m */; };
 		DB34D81C8BC1F75A6DAA86B8 /* Lato-LigIta.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34D9D907B789F618C4733E /* Lato-LigIta.ttf */; };
 		DB34D820BD9F3774375008AA /* Cabin-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34D2192721EF56BEDD0FE3 /* Cabin-Regular.ttf */; };
 		DB34D87967D4FE5447A9111C /* Lato-Reg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34D1D265BA56D328B49F32 /* Lato-Reg.ttf */; };
@@ -80,6 +81,7 @@
 		DB34D97D33009FB033A656D0 /* services.json in Resources */ = {isa = PBXBuildFile; fileRef = DB34DCBA2EB45AACE7C42965 /* services.json */; };
 		DB34D9D5C239DFE5093EAB0D /* services.json in Resources */ = {isa = PBXBuildFile; fileRef = DB34DCBA2EB45AACE7C42965 /* services.json */; };
 		DB34DA2C2F41164003E562BC /* Cabin-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34DB82EBC071DEADF61413 /* Cabin-Medium.ttf */; };
+		DB34DA58705BC20FEEE05DE1 /* LXPeripheralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34D1F48C53F7BA7E9AD622 /* LXPeripheralManager.m */; };
 		DB34DA83476CE5E6F0C282AF /* LXPeripheralsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34D57156351E1515916F80 /* LXPeripheralsViewController.m */; };
 		DB34DB6084059D008B847A20 /* Lobster.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34DC7DF2AE2FA17721DD78 /* Lobster.ttf */; };
 		DB34DBACBA0F584997C024F1 /* Cabin-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34D2CCDD80F4EBD33F8987 /* Cabin-BoldItalic.ttf */; };
@@ -158,6 +160,7 @@
 		DB34D1D265BA56D328B49F32 /* Lato-Reg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Lato-Reg.ttf"; sourceTree = "<group>"; };
 		DB34D1D4941F31A4DC28B65D /* Lato-BolIta.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Lato-BolIta.ttf"; sourceTree = "<group>"; };
 		DB34D1ECDD6CC1B65132771F /* Lato-BlaIta.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Lato-BlaIta.ttf"; sourceTree = "<group>"; };
+		DB34D1F48C53F7BA7E9AD622 /* LXPeripheralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXPeripheralManager.m; sourceTree = "<group>"; };
 		DB34D2192721EF56BEDD0FE3 /* Cabin-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Cabin-Regular.ttf"; sourceTree = "<group>"; };
 		DB34D22F2D379EE222DD0235 /* LXDiscoveryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDiscoveryManager.h; sourceTree = "<group>"; };
 		DB34D22F6ED68746D85B919B /* LXPeripheralDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXPeripheralDetailsViewController.m; sourceTree = "<group>"; };
@@ -178,6 +181,7 @@
 		DB34D7C6543C3F83457B0DB8 /* LXPeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXPeripheral.h; sourceTree = "<group>"; };
 		DB34D7D26E14EB66DFDE23EF /* LXLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXLogger.m; sourceTree = "<group>"; };
 		DB34D89A610061220467DDD0 /* LXPeripheralServiceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXPeripheralServiceTableViewCell.h; sourceTree = "<group>"; };
+		DB34D91D6A9A0CE386C7E1CE /* LXPeripheralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXPeripheralManager.h; sourceTree = "<group>"; };
 		DB34D946A03C4BB956210196 /* LXPeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXPeripheral.m; sourceTree = "<group>"; };
 		DB34D9D907B789F618C4733E /* Lato-LigIta.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Lato-LigIta.ttf"; sourceTree = "<group>"; };
 		DB34DA0D5ECB5E3BDC0D83A0 /* Cabin-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Cabin-Bold.ttf"; sourceTree = "<group>"; };
@@ -443,6 +447,8 @@
 			children = (
 				DB34D22F2D379EE222DD0235 /* LXDiscoveryManager.h */,
 				DB34DA8A8868465DD0B7B280 /* LXDiscoveryManager.m */,
+				DB34D1F48C53F7BA7E9AD622 /* LXPeripheralManager.m */,
+				DB34D91D6A9A0CE386C7E1CE /* LXPeripheralManager.h */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -704,6 +710,7 @@
 				DB34DEF2C344446C6E2EFBA1 /* LXTableViewCell.m in Sources */,
 				DB34D885D95B1BFB604F0657 /* LXPeripheralServicesViewController.m in Sources */,
 				DB34D3EEEAE306DEF592854D /* LXPeripheralService.m in Sources */,
+				DB34D7FF593F1BC7162773AE /* LXPeripheralManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -728,6 +735,7 @@
 				DB34D8C9A77F9016DE3989F9 /* LXTableViewCell.m in Sources */,
 				DB34D73A4B3A90C4662647C1 /* LXPeripheralServicesViewController.m in Sources */,
 				DB34DE7839033F28D4CA3FF8 /* LXPeripheralService.m in Sources */,
+				DB34DA58705BC20FEEE05DE1 /* LXPeripheralManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

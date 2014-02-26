@@ -59,6 +59,14 @@
         LXPeripheral *lxPeripheral = notification.userInfo[LXPeripheralValue];
         [weakSelf onPeripheralSelected:lxPeripheral];
     }];
+    self.showPeripheralsViewControllerNotificationObserver = [[NSNotificationCenter defaultCenter] addObserverForName:LXTogglePeripheralsViewControllerNotification
+                                                                                                               object:nil
+                                                                                                                queue:nil
+                                                                                                           usingBlock:^(NSNotification *notification) {
+                                                                                                               LXLogDebug(@"[%d] '%@' notification observed - userInfos: %@", weakSelf.hash, notification.name, notification.userInfo);
+
+                                                                                                               [weakSelf onTogglePeripheralsViewController];
+                                                                                                           }];
     self.showPeripheralsViewControllerNotificationObserver = [[NSNotificationCenter defaultCenter] addObserverForName:LXShowPeripheralsViewControllerNotification
                                                                                                                object:nil
                                                                                                                 queue:nil
@@ -101,6 +109,31 @@
     }
     else {
         LXLogDebug(@"Segue with identifier was not handled: '%@'", segueIdentifier);
+    }
+}
+
+- (void)onTogglePeripheralsViewController
+{
+    if (self.peripheralsViewControllerTopConstraint.constant == -240) {
+        [UIView animateWithDuration:0.3
+                              delay:0.0
+                            options:UIViewAnimationOptionCurveEaseOut
+                         animations:^{
+                             self.peripheralsViewControllerTopConstraint.constant = 0;
+                             [self.view layoutIfNeeded];
+                         } completion:^(BOOL finished) {}];
+
+    }
+    else {
+        [UIView animateWithDuration:0.2
+                              delay:0.0
+                            options:UIViewAnimationOptionCurveEaseOut
+                         animations:^{
+                             self.peripheralsViewControllerTopConstraint.constant = 464;
+                             self.scanViewControllerHeightConstraint.constant = 464;
+                             [self.view layoutIfNeeded];
+                         } completion:^(BOOL finished) {}];
+
     }
 }
 

@@ -11,6 +11,7 @@ pod 'UIAlertView+Blocks',			'0.8'
 pod 'Reachability', 		 		'3.1.1'
 pod 'Mantle',						'1.3.1'
 pod 'CERoundProgressView',  		'0.0.1'
+pod 'OCMock',						'2.2.2'
 
 target 'ble-managerTests', :exclusive => false do
 	pod 'OCMock',					'2.2.2'

@@ -9,28 +9,26 @@
 @interface LXPeripheralService ()
 
 @property(nonatomic, strong) NSString *identifier;
-@property(nonatomic, strong) NSString *name;
-@property(nonatomic, strong) NSString *type;
+@property(nonatomic, assign) BOOL primary;
 
 @end
 
 @implementation LXPeripheralService
 
-- (instancetype)initWithIdentifier:(NSString *)identifier name:(NSString *)name type:(NSString *)type
+- (instancetype)initWithIdentifier:(NSString *)identifier primary:(BOOL)primary
 {
     self = [super init];
     if (self) {
         self.identifier = identifier;
-        self.name = name;
-        self.type = type;
+        self.primary = primary;
     }
 
     return self;
 }
 
-+ (instancetype)serviceWithIdentifier:(NSString *)identifier name:(NSString *)name type:(NSString *)type
++ (instancetype)serviceWithIdentifier:(NSString *)identifier primary:(BOOL)primary
 {
-    return [[self alloc] initWithIdentifier:identifier name:name type:type];
+    return [[self alloc] initWithIdentifier:identifier primary:primary];
 }
 
 @end

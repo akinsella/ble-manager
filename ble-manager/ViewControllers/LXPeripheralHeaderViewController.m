@@ -22,10 +22,15 @@
 {
     [super viewDidLoad];
 
-    UISwipeGestureRecognizer *swipeUpGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleGestureForControllerView:)];
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGestureForControllerView:)];
+    tapGestureRecognizer.numberOfTapsRequired = 2;
+    tapGestureRecognizer.numberOfTouchesRequired = 1;
+    [self.view addGestureRecognizer:tapGestureRecognizer];
+
+    UISwipeGestureRecognizer *swipeUpGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeGestureForControllerView:)];
     swipeUpGestureRecognizer.direction = UISwipeGestureRecognizerDirectionUp;
     [self.view addGestureRecognizer:swipeUpGestureRecognizer];
-    UISwipeGestureRecognizer *swipeDownGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleGestureForControllerView:)];
+    UISwipeGestureRecognizer *swipeDownGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeGestureForControllerView:)];
     swipeDownGestureRecognizer.direction = UISwipeGestureRecognizerDirectionDown;
     [self.view addGestureRecognizer:swipeDownGestureRecognizer];
 }
@@ -73,7 +78,12 @@
     self.view.backgroundColor = [UIColor colorWithHex:lxPeripheral.hexColor];
 }
 
-- (void)handleGestureForControllerView:(UISwipeGestureRecognizer *)sender
+- (void)handleTapGestureForControllerView:(UITapGestureRecognizer *)sender
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:LXTogglePeripheralsViewControllerNotification object:self userInfo:@{}];
+}
+
+- (void)handleSwipeGestureForControllerView:(UISwipeGestureRecognizer *)sender
 {
     if (sender.direction == UISwipeGestureRecognizerDirectionDown) {
         [[NSNotificationCenter defaultCenter] postNotificationName:LXShowPeripheralsViewControllerNotification object:self userInfo:@{}];
@@ -82,6 +92,5 @@
         [[NSNotificationCenter defaultCenter] postNotificationName:LXHidePeripheralsViewControllerNotification object:self userInfo:@{}];
     }
 }
-
 
 @end

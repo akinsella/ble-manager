@@ -4,26 +4,28 @@
 //
 
 #import "LXPeripheralServicesViewController.h"
-#import "XBReloadableArrayDataSource.h"
 #import "LXPeripheralService.h"
 #import "LXPeripheralServiceTableViewCell.h"
-#import "XBBundleJsonDataLoader.h"
-#import "LXPeripheral.h"
 #import "LXConstant.h"
+#import "LXPeripheralManager.h"
 
 @interface LXPeripheralServicesViewController ()
 
-@property (nonatomic, strong)XBReloadableArrayDataSource *peripheralServicesDataSource;
-
 @property (nonatomic, strong)id peripheralSelectedNotificationObserver;
+
+@property (nonatomic, strong) LXPeripheral *lxPeripheral;
 
 @end
 
 @implementation LXPeripheralServicesViewController
 
-- (void)viewDidLoad
+- (void)scanServices
 {
-    [super viewDidLoad];
+    LXPeripheralManager *peripheralManager = [LXPeripheralManager managerWithPeripheral:self.lxPeripheral];
+
+    [peripheralManager discoverServicesWithTimeout:5 completion:^(NSError *error) {
+        [self.peripheralServicesTableView reloadData];
+    }];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -63,22 +65,22 @@
 
 - (void)onPeripheralSelected:(LXPeripheral *)lxPeripheral
 {
-    id<XBDataLoader> dataLoader = [XBBundleJsonDataLoader dataLoaderWithResourcePath:@"services" resourceType:@"json"];
-    self.peripheralServicesDataSource = [XBReloadableArrayDataSource dataSourceWithDataLoader:dataLoader];
-
+    self.lxPeripheral = lxPeripheral;
     [self.peripheralServicesTableView reloadData];
+
+    [self scanServices];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.peripheralServicesDataSource ? self.peripheralServicesDataSource.count : 0;
+    return self.lxPeripheral ? self.lxPeripheral.services.count : 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"PeripheralServiceCell";
 
-    LXPeripheralService *peripheralService = self.peripheralServicesDataSource[(NSUInteger) indexPath.row];
+    LXPeripheralService *peripheralService = self.lxPeripheral.services[(NSUInteger) indexPath.row];
     LXPeripheralServiceTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     [cell configureWithPeripheralService:peripheralService forIndexPath:indexPath];
 

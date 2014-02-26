@@ -9,12 +9,11 @@
 @interface LXPeripheralService : NSObject
 
 @property(nonatomic, strong, readonly) NSString *identifier;
-@property(nonatomic, strong, readonly) NSString *name;
-@property(nonatomic, strong, readonly) NSString *type;
+@property(nonatomic, assign, readonly) BOOL primary;
 
-- (instancetype)initWithIdentifier:(NSString *)identifier name:(NSString *)name type:(NSString *)type;
+- (instancetype)initWithIdentifier:(NSString *)identifier primary:(BOOL)primary;
 
-+ (instancetype)serviceWithIdentifier:(NSString *)identifier name:(NSString *)name type:(NSString *)type;
++ (instancetype)serviceWithIdentifier:(NSString *)identifier primary:(BOOL)primary;
 
 
 @end

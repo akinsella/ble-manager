@@ -8,6 +8,9 @@
 #import "LXPeripheral.h"
 #import "LXConstant.h"
 #import "Underscore.h"
+#import "OCMockObject.h"
+#import "NSObject+KiwiStubAdditions.h"
+#import <OCMock/OCMock.h>
 
 
 @interface LXDiscoveryManager ()
@@ -20,9 +23,9 @@
 
 @property (nonatomic, assign) BOOL isScanning;
 
-#if TARGET_IPHONE_SIMULATOR
+//#if TARGET_IPHONE_SIMULATOR
 @property (nonatomic, strong) NSArray *mockLxPeripherals;
-#endif
+//#endif
 
 @end
 
@@ -54,7 +57,12 @@
     if (self) {
         self.isScanning = NO;
         self.peripherals = [NSMutableArray array];
+//#if TARGET_IPHONE_SIMULATOR
+        self.centralManager = [self configureMockCentralManager];
+//#else
         self.centralManager = [[CBCentralManager alloc] initWithDelegate:self queue:nil];
+//#endif
+
 
 #if TARGET_IPHONE_SIMULATOR
         [self configureMockPeripherals];
@@ -65,38 +73,58 @@
     return self;
 }
 
-#if TARGET_IPHONE_SIMULATOR
+//#if TARGET_IPHONE_SIMULATOR
+- (CBCentralManager *)configureMockCentralManager
+{
+    CBCentralManager *mockCentralManager = [OCMockObject mockForClass:CBCentralManager.class];
+    self.centralManager = mockCentralManager;
+
+    return mockCentralManager;
+}
+
 - (void)configureMockPeripherals
 {
     self.mockLxPeripherals = @[
-            [LXPeripheral peripheralWithIdentifier:@"0894645C-5BB6-9D49-AABD-CAEB02CF1BE8"
-                                              name:@"iSmartLight - Bough"
+            [LXPeripheral peripheralWithCBPeripheral:[self cbPeripheralMockWithIdentfier:@"0894645C-5BB6-9D49-AABD-CAEB02CF1BE8"
+                                                                                 andName:@"iSmartLight - Bough"]
                                  advertisementData:@{} rssi:@-87
                                           hexColor: @"#f1c40f"
                                               date:[NSDate date]],
-            [LXPeripheral peripheralWithIdentifier:@"64A92BB4-F1A3-16C6-C4AF-551DEFF0A24F"
-                                              name:@"No Name"
+            [LXPeripheral peripheralWithCBPeripheral:[self cbPeripheralMockWithIdentfier:@"64A92BB4-F1A3-16C6-C4AF-551DEFF0A24F"
+                                                                                 andName:@"No Name - 1"]
                                  advertisementData:@{} rssi:@-57
                                           hexColor: @"#34495e"
                                               date:[NSDate date]],
-            [LXPeripheral peripheralWithIdentifier:@"BB173E0E-5F5F-3260-B2DD-75D847D2859A"
-                                              name:@"No Name"
+            [LXPeripheral peripheralWithCBPeripheral:[self cbPeripheralMockWithIdentfier:@"BB173E0E-5F5F-3260-B2DD-75D847D2859A"
+                                                                                 andName:@"No Name - 2"]
                                  advertisementData:@{} rssi:@-81
                                           hexColor: @"#e74c3c"
                                               date:[NSDate date]],
-            [LXPeripheral peripheralWithIdentifier:@"4696D7AC-433B-692A-D898-A5234A0508EF"
-                                              name:@"Sensor Tag"
+            [LXPeripheral peripheralWithCBPeripheral:[self cbPeripheralMockWithIdentfier:@"4696D7AC-433B-692A-D898-A5234A0508EF"
+                                                                                 andName:@"Sensor Tag"]
                                  advertisementData:@{} rssi:@-69
                                           hexColor: @"#27ae60"
                                               date:[NSDate date]],
-            [LXPeripheral peripheralWithIdentifier:@"19366D3-21A4-3450-504F-B42E6E4D847B"
-                                              name:@"No Name"
+            [LXPeripheral peripheralWithCBPeripheral:[self cbPeripheralMockWithIdentfier:@"19366D3C-21A4-3450-504F-B42E6E4D847B"
+                                                                                 andName:@"No Name - 3"]
                                  advertisementData:@{} rssi:@-77
                                           hexColor: @"#2980b9"
                                               date:[NSDate date]]
     ];
 }
-#endif
+
+- (CBPeripheral *)cbPeripheralMockWithIdentfier:(NSString *)mockIdentifier andName:(NSString *)mockName
+{
+    CBPeripheral *mockCBPeripheral = [OCMockObject mockForClass:CBPeripheral.class];
+    NSUUID *uuid = [[NSUUID alloc] initWithUUIDString:mockIdentifier];
+    [[[mockCBPeripheral stub] andReturn:uuid] identifier];
+    [[[mockCBPeripheral stub] andReturn:mockName] name];
+    [[[mockCBPeripheral stub] andReturnValue:OCMOCK_VALUE(CBPeripheralStateConnected)] state];
+    [[mockCBPeripheral stub] discoverServices:OCMOCK_ANY];
+
+    return mockCBPeripheral;
+}
+//#endif
 
 -(void)dealloc
 {
@@ -191,11 +219,11 @@
     });
 
     if (!lxPeripheral) {
-        lxPeripheral = [LXPeripheral peripheralCBPeripheral:cbPeripheral
-                                          advertisementData:advertisementData
-                                                       rssi:RSSI
-                                                   hexColor:peripheralColor
-                                                       date:[NSDate date]];
+        lxPeripheral = [LXPeripheral peripheralWithCBPeripheral:cbPeripheral
+                                              advertisementData:advertisementData
+                                                           rssi:RSSI
+                                                       hexColor:peripheralColor
+                                                           date:[NSDate date]];
 
         [self.peripherals addObject:lxPeripheral];
     }

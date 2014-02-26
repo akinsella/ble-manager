@@ -4,7 +4,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "LXPeripheral.h"
 
 @interface LXPeripheralServicesViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 

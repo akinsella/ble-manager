@@ -5,69 +5,67 @@
 
 #import <CoreBluetooth/CoreBluetooth.h>
 #import "LXPeripheral.h"
+#import "LXPeripheralService.h"
 
 
 static NSString *const kNoName = @"No Name";
 
 @interface LXPeripheral ()
 
-@property(nonatomic, strong) NSString *identifier;
-@property(nonatomic, strong) NSString *name;
-@property(nonatomic, strong) NSDictionary *advertisementData;
-@property(nonatomic, strong) NSNumber *rssi;
-@property(nonatomic, strong) NSString *hexColor;
-@property(nonatomic, strong) NSDate *date;
+@property (nonatomic, strong) CBPeripheral *cbPeripheral;
+@property (nonatomic, strong) NSString *identifier;
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSDictionary *advertisementData;
+@property (nonatomic, strong) NSNumber *rssi;
+@property (nonatomic, strong) NSString *hexColor;
+@property (nonatomic, strong) NSDate *date;
+
+@property (nonatomic, strong) NSMutableArray *services;
 
 @end
 
 @implementation LXPeripheral
 
-- (instancetype)initWithIdentifier:(NSString *)identifier name:(NSString *)name advertisementData:(NSDictionary *)advertisementData rssi:(NSNumber *)rssi hexColor:(NSString *)hexColor date:(NSDate *)date
+- (instancetype)initWithCBPeripheral:(CBPeripheral *)cbPeripheral advertisementData:(NSDictionary *)advertisementData rssi:(NSNumber *)rssi hexColor:(NSString *)hexColor date:(NSDate *)date
 {
     self = [super init];
     if (self) {
-        self.identifier = identifier;
-        self.name = name;
+        self.cbPeripheral = cbPeripheral;
+        self.identifier = cbPeripheral.identifier.UUIDString;
+        self.name = cbPeripheral.name;
         self.advertisementData = advertisementData;
         self.rssi = rssi;
         self.hexColor = hexColor;
         self.date = date;
+        self.services = [NSMutableArray array];
     }
 
     return self;
 }
 
-+ (instancetype)peripheralWithIdentifier:(NSString *)identifier name:(NSString *)name advertisementData:(NSDictionary *)advertisementData rssi:(NSNumber *)rssi hexColor:(NSString *)hexColor date:(NSDate *)date
++ (instancetype)peripheralWithCBPeripheral:(CBPeripheral *)cbPeripheral advertisementData:(NSDictionary *)advertisementData rssi:(NSNumber *)rssi hexColor:(NSString *)hexColor date:(NSDate *)date
 {
-    return [[self alloc] initWithIdentifier:identifier name:name advertisementData:advertisementData rssi:rssi hexColor:hexColor date:date];
-}
-
-+ (instancetype)peripheralCBPeripheral:(CBPeripheral *)cbPeripheral advertisementData:(NSDictionary *)advertisementData rssi:(NSNumber *)rssi hexColor:(NSString *)hexColor date:(NSDate *)date
-{
-    return [LXPeripheral peripheralWithIdentifier:cbPeripheral.identifier.UUIDString
-                                             name:cbPeripheral.name ? cbPeripheral.name : kNoName
-                                advertisementData:advertisementData
-                                             rssi:rssi
-                                         hexColor:hexColor
-                                             date:date];
+    return [[self alloc] initWithCBPeripheral:cbPeripheral advertisementData:advertisementData rssi:rssi hexColor:hexColor date:date];
 }
 
 - (void)updatePeripheralWithCBPeripheral:(CBPeripheral *)cbPeripheral advertisementData:(NSDictionary *)advertisementData rssi:(NSNumber *)rssi
 {
+    self.cbPeripheral = cbPeripheral;
     self.identifier = cbPeripheral.identifier.UUIDString;
     self.name = cbPeripheral.name;
     self.advertisementData = advertisementData;
     self.rssi = rssi;
 }
 
-
-- (void)updatePeripheralWithLXPeripheral:(LXPeripheral *)lxPeripheral
+- (void)updatePeripheralWithRSSI:(NSNumber *)rssi
 {
-    self.name = lxPeripheral.name;
-    self.advertisementData = lxPeripheral.advertisementData;
-    self.rssi = lxPeripheral.rssi;
+    self.rssi = rssi;
 }
 
+- (void)updatePeripheralWithName:(NSString *)name
+{
+    self.name = name;
+}
 
 - (NSString *)description
 {
@@ -81,6 +79,11 @@ static NSString *const kNoName = @"No Name";
     [description appendString:@">"];
 
     return description;
+}
+
+- (void)addService:(LXPeripheralService *)service
+{
+    [self.services addObject: service];
 }
 
 @end

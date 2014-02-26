@@ -1,8 +1,12 @@
 
 
+NSString *const LXErrorDomain = @"org.helyx";
+NSInteger const LXAlreadyScanningPeripheral = 1;
+
 NSString *const LXScanStartNotification = @"LXScanStartNotification";
 NSString *const LXScanStopNotification = @"LXScanStopNotification";
 NSString *const LXPeripheralDiscoveredNotification = @"LXPeripheralDiscoveredNotification";
+NSString *const LXTogglePeripheralsViewControllerNotification = @"LXTogglePeripheralsViewControllerNotification";
 NSString *const LXShowPeripheralsViewControllerNotification = @"LXShowPeripheralsViewControllerNotification";
 NSString *const LXHidePeripheralsViewControllerNotification = @"LXHidePeripheralsViewControllerNotification";
 

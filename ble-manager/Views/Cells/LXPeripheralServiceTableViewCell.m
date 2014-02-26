@@ -18,8 +18,8 @@
 {
     self.peripheralService = peripheralService;
 
-    self.nameAndUuidLabel.text = [NSString stringWithFormat:@"%@ - %@", peripheralService.identifier, peripheralService.name];
-    self.typeLabel.text = peripheralService.type;
+    self.nameAndUuidLabel.text = [NSString stringWithFormat:@"%@", peripheralService.identifier];
+    self.typeLabel.text = @"";
 }
 
 @end
