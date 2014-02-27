@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LXAppConfiguration.h"
+#import "LXStoryboards.h"
 
 @interface LXAppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, strong, readonly) LXStoryboards *storyboards;
+
+@property (nonatomic, strong) UIWindow *window;
+
+@property (nonatomic, strong, readonly) LXAppConfiguration *configuration;
 
 @end

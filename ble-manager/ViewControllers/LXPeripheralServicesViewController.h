@@ -5,9 +5,10 @@
 
 #import <Foundation/Foundation.h>
 #import "LXPeripheral.h"
+#import "LXTableView.h"
 
 @interface LXPeripheralServicesViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
-@property (nonatomic, strong) IBOutlet UITableView *peripheralServicesTableView;
+@property (nonatomic, strong) IBOutlet LXTableView *peripheralServicesTableView;
 
 @end

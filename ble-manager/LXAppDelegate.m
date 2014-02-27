@@ -8,24 +8,99 @@
 #import <Crashlytics/Crashlytics.h>
 #import "LXAppDelegate.h"
 #import "UIColor+XBAdditions.h"
+#import "SDURLCache.h"
+#import "Appirater.h"
+#import "CBIntrospect.h"
+
+//TODO: Need to change AppID
+static NSString *const kAppId = @"1234567890";
+
+@interface LXAppDelegate ()
+
+@property (nonatomic, strong) LXStoryboards *storyboards;
+@property (nonatomic, strong) LXAppConfiguration *configuration;
+
+@end
 
 @implementation LXAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
-    
     [self setupCrashlytics];
+
+    [self setupURLCache];
+
+    [self setupConfigurationProvider];
+
+    [self setupMainBundle];
+
+    [self setupAppearance];
+    [self setupStoryboards];
+
+    [self setupApplicationRating];
+
+    return YES;
+}
+
+- (void)setupStoryboards
+{
+    self.storyboards = [LXStoryboards storyboards];
+}
+
+- (void)setupConfigurationProvider
+{
+    self.configuration = [LXAppConfiguration appConfiguration];
+}
+
+- (void)setupAppearance
+{
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 
     [[UINavigationBar appearance] setTitleTextAttributes: @{
         NSForegroundColorAttributeName: [UIColor colorWithHex:@"#FFFFFF"],
         NSFontAttributeName: [UIFont fontWithName:@"Lobster" size:20.0f]
     }];
+}
+
+- (void)setupURLCache
+{
+    SDURLCache *URLCache = [[SDURLCache alloc] initWithMemoryCapacity:1024*1024*2
+                                                         diskCapacity:1024*1024*20
+                                                             diskPath:[SDURLCache defaultCachePath]];
+    [NSURLCache setSharedURLCache:URLCache];
+}
 
 
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-    
-    return YES;
+- (void)setupMainBundle
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    // transfer the current version number into the defaults so that this correct value will be displayed when the user visit settings page later
+    NSString *version = [NSString stringWithFormat:@"%@(%@)", self.configuration.bundleShortVersion, self.configuration.bundleVersion];
+    [defaults setObject:version forKey:@"version"];
+}
+
+- (void)setupApplicationRating
+{
+    [Appirater setAppId:kAppId];
+    [Appirater setDaysUntilPrompt:1];
+    [Appirater setUsesUntilPrompt:10];
+    [Appirater setSignificantEventsUntilPrompt:-1];
+    [Appirater setTimeBeforeReminding:2];
+
+#if TARGET_IPHONE_SIMULATOR || defined(DEBUG)
+    [Appirater setDebug:YES];
+#else
+    [Appirater setDebug:NO];
+#endif
+
+}
+
+- (void)setupDCIntrospect
+{
+// always call after makeKeyAndDisplay.
+#if TARGET_IPHONE_SIMULATOR
+    [[CBIntrospect sharedIntrospector] start];
+#endif
 }
 
 - (void)setupCrashlytics

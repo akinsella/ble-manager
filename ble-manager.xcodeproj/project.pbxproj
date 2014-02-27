@@ -13,8 +13,6 @@
 		541E0C3E18A6647D00825463 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 541E0C3C18A6647D00825463 /* InfoPlist.strings */; };
 		541E0C4018A6647D00825463 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 541E0C3F18A6647D00825463 /* main.m */; };
 		541E0C4418A6647D00825463 /* LXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 541E0C4318A6647D00825463 /* LXAppDelegate.m */; };
-		541E0C4718A6647D00825463 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 541E0C4518A6647D00825463 /* Main_iPhone.storyboard */; };
-		541E0C4A18A6647D00825463 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 541E0C4818A6647D00825463 /* Main_iPad.storyboard */; };
 		541E0C4F18A6647D00825463 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 541E0C4E18A6647D00825463 /* Images.xcassets */; };
 		541E0C5618A6647D00825463 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 541E0C5518A6647D00825463 /* XCTest.framework */; };
 		541E0C5718A6647E00825463 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 541E0C3318A6647D00825463 /* Foundation.framework */; };
@@ -30,20 +28,29 @@
 		547DE4C518A7C482000EFAFD /* wave.png in Resources */ = {isa = PBXBuildFile; fileRef = 547DE4C118A7C482000EFAFD /* wave.png */; };
 		547DE4C618A7C482000EFAFD /* wave@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 547DE4C218A7C482000EFAFD /* wave@2x.png */; };
 		547DE4CA18A85040000EFAFD /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 547DE4C918A85040000EFAFD /* Reveal.framework */; };
+		54D27E4D18BFEA5300C1D203 /* no-data.png in Resources */ = {isa = PBXBuildFile; fileRef = 54D27E4B18BFEA5300C1D203 /* no-data.png */; };
+		54D27E4E18BFEA5300C1D203 /* no-data@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54D27E4C18BFEA5300C1D203 /* no-data@2x.png */; };
+		54D27E5018BFEF7B00C1D203 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 54D27E4F18BFEF7B00C1D203 /* Settings.bundle */; };
+		54D27E5218BFF04100C1D203 /* MainStoryboard~iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 541E0C4818A6647D00825463 /* MainStoryboard~iPad.storyboard */; };
+		54D27E5318BFF04100C1D203 /* MainStoryboard~iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 541E0C4518A6647D00825463 /* MainStoryboard~iPhone.storyboard */; };
 		DB34D0170A9B5A104D2F7381 /* LXPeripheralsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34D57156351E1515916F80 /* LXPeripheralsViewController.m */; };
 		DB34D026FD760623454B6C9B /* LXPeripheralDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34D22F6ED68746D85B919B /* LXPeripheralDetailsViewController.m */; };
 		DB34D02C5E0ADE6CF99F4DA8 /* LXPeripheralHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34DAA7EB840C38DC960753 /* LXPeripheralHeaderViewController.m */; };
+		DB34D063E01105341B522394 /* LXEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34D1BFF729D5B5028897F9 /* LXEmptyView.m */; };
 		DB34D0EF87A5A2EEA318E16E /* Cabin-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34D4A3828E12255F598190 /* Cabin-Italic.ttf */; };
 		DB34D10F760F11C9D32D64D1 /* Cabin-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34D2192721EF56BEDD0FE3 /* Cabin-Regular.ttf */; };
 		DB34D135F7ADDA7147D1C3AE /* LXDiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34D070153E8FB10338D517 /* LXDiscoveryViewController.m */; };
 		DB34D1689DAF2C77E773C4E1 /* LXPeripheralHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34DAA7EB840C38DC960753 /* LXPeripheralHeaderViewController.m */; };
+		DB34D17D4A08F9E58D7F2AD5 /* LXTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34D467156B45C2C6EDBA6E /* LXTableView.m */; };
 		DB34D1963E0B800A8D9172B3 /* LXScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34DEFE7EFE6A928C137CCF /* LXScanViewController.m */; };
+		DB34D1BB6CF58EA37C5E6512 /* LXAppConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34D98C1209FF15AB7354A9 /* LXAppConfiguration.m */; };
 		DB34D1C70AC3BC53FE4A40CF /* Lato-Lig.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34D4D069CDD408FAAC1FF9 /* Lato-Lig.ttf */; };
 		DB34D1EF91F8120F8285D6BA /* Lato-Bol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34D78ADC2B34CE133459CB /* Lato-Bol.ttf */; };
 		DB34D23F148B10EABC80240A /* Lato-Bla.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34DB497D65B3DEE63C5945 /* Lato-Bla.ttf */; };
 		DB34D248D76225A8C751CFDC /* LXDiscoveryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34DA8A8868465DD0B7B280 /* LXDiscoveryManager.m */; };
 		DB34D298691689BCB7264203 /* Cabin-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34DA0D5ECB5E3BDC0D83A0 /* Cabin-Bold.ttf */; };
 		DB34D2D4A96998D091AF6350 /* Lato-HaiIta.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34DBAD5AB6F21EC3557396 /* Lato-HaiIta.ttf */; };
+		DB34D2FE45C849554A7087A0 /* LXStoryboards.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34D29B6AA64C41DF036BC3 /* LXStoryboards.m */; };
 		DB34D315DE174A76C7B9F1E2 /* Lato-BolIta.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34D1D4941F31A4DC28B65D /* Lato-BolIta.ttf */; };
 		DB34D352DF5DA577FB0492E8 /* UIColor+XBAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34DA8FE87E102B88338E3B /* UIColor+XBAdditions.m */; };
 		DB34D36DA7EA96C9FB4D0F9B /* Lato-LigIta.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34D9D907B789F618C4733E /* Lato-LigIta.ttf */; };
@@ -58,6 +65,7 @@
 		DB34D477E8AD753BA47A23A7 /* Cabin-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34DB82EBC071DEADF61413 /* Cabin-Medium.ttf */; };
 		DB34D4CBC56D0A32FF75BCD4 /* Cabin-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34D240F674A1868B1BC0B1 /* Cabin-SemiBoldItalic.ttf */; };
 		DB34D546E488147A4A5B4269 /* Cabin-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34D240F674A1868B1BC0B1 /* Cabin-SemiBoldItalic.ttf */; };
+		DB34D5901074495C109A841B /* LXEmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB34DBB5AA022DBFB2549330 /* LXEmptyView.xib */; };
 		DB34D5C330094CA668155E68 /* Cabin-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34D2CCDD80F4EBD33F8987 /* Cabin-BoldItalic.ttf */; };
 		DB34D676562D6C922B3D6184 /* LXPeripheralViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34D0B6437882D38F4D2390 /* LXPeripheralViewCell.m */; };
 		DB34D68B29CB7FBF9EECF2EF /* LXPeripheralServiceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34D55D1EDA704697EFFE3B /* LXPeripheralServiceTableViewCell.m */; };
@@ -101,6 +109,7 @@
 		DB34DF2209F3E7A9D391D84D /* LXLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34D7D26E14EB66DFDE23EF /* LXLogger.m */; };
 		DB34DF53F85A8E1DA4DEE6A7 /* LXPeripheralView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34DFC14AB290876A2970A8 /* LXPeripheralView.m */; };
 		DB34DF555B61D61648B31044 /* Cabin-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34D23B3DB10F4765FF5BBE /* Cabin-MediumItalic.ttf */; };
+		DB34DFA88539018E3D3CE805 /* LXTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34D467156B45C2C6EDBA6E /* LXTableView.m */; };
 		DB34DFA8FDFD16A29182BA53 /* Lobster.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34DC7DF2AE2FA17721DD78 /* Lobster.ttf */; };
 		DB34DFAC0018695C8F3B9A6C /* Lato-Reg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB34D1D265BA56D328B49F32 /* Lato-Reg.ttf */; };
 		DB34DFB13D9E4BD75D42F80C /* LXConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34DAAEC3C300D5115F9989 /* LXConstant.m */; };
@@ -132,8 +141,8 @@
 		541E0C4118A6647D00825463 /* ble-manager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ble-manager-Prefix.pch"; sourceTree = "<group>"; };
 		541E0C4218A6647D00825463 /* LXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXAppDelegate.h; sourceTree = "<group>"; };
 		541E0C4318A6647D00825463 /* LXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXAppDelegate.m; sourceTree = "<group>"; };
-		541E0C4618A6647D00825463 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		541E0C4918A6647D00825463 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		541E0C4618A6647D00825463 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/MainStoryboard~iPhone.storyboard"; sourceTree = "<group>"; };
+		541E0C4918A6647D00825463 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/MainStoryboard~iPad.storyboard"; sourceTree = "<group>"; };
 		541E0C4E18A6647D00825463 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		541E0C5418A6647D00825463 /* ble-managerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ble-managerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		541E0C5518A6647D00825463 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -150,13 +159,18 @@
 		547DE4C218A7C482000EFAFD /* wave@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wave@2x.png"; sourceTree = "<group>"; };
 		547DE4C918A85040000EFAFD /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reveal.framework; path = "../../../../../Applications/Reveal.app/Contents/SharedSupport/iOS-Libraries/Reveal.framework"; sourceTree = "<group>"; };
 		54A23930367C4625A6D0BFC7 /* libPods-ble-managerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ble-managerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54D27E4B18BFEA5300C1D203 /* no-data.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "no-data.png"; sourceTree = "<group>"; };
+		54D27E4C18BFEA5300C1D203 /* no-data@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "no-data@2x.png"; sourceTree = "<group>"; };
+		54D27E4F18BFEF7B00C1D203 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		D61D8CF7BC254B979E11EEB0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB34D0552AA5345B3580F5B2 /* LXStoryboards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXStoryboards.h; sourceTree = "<group>"; };
 		DB34D070153E8FB10338D517 /* LXDiscoveryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXDiscoveryViewController.m; sourceTree = "<group>"; };
 		DB34D07160DE3A54B1DFB61C /* LXPeripheralViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXPeripheralViewCell.h; sourceTree = "<group>"; };
 		DB34D0B0352F2F5821D17E30 /* LXLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXLogger.h; sourceTree = "<group>"; };
 		DB34D0B6437882D38F4D2390 /* LXPeripheralViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXPeripheralViewCell.m; sourceTree = "<group>"; };
 		DB34D0CD65F058709164A532 /* LXTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LXTableViewCell.h; path = "ble-manager/Views/LXTableViewCell.h"; sourceTree = SOURCE_ROOT; };
 		DB34D170235208EE3A85D38A /* LXPeripheralServicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXPeripheralServicesViewController.m; sourceTree = "<group>"; };
+		DB34D1BFF729D5B5028897F9 /* LXEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXEmptyView.m; sourceTree = "<group>"; };
 		DB34D1D265BA56D328B49F32 /* Lato-Reg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Lato-Reg.ttf"; sourceTree = "<group>"; };
 		DB34D1D4941F31A4DC28B65D /* Lato-BolIta.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Lato-BolIta.ttf"; sourceTree = "<group>"; };
 		DB34D1ECDD6CC1B65132771F /* Lato-BlaIta.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Lato-BlaIta.ttf"; sourceTree = "<group>"; };
@@ -166,9 +180,12 @@
 		DB34D22F6ED68746D85B919B /* LXPeripheralDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXPeripheralDetailsViewController.m; sourceTree = "<group>"; };
 		DB34D23B3DB10F4765FF5BBE /* Cabin-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Cabin-MediumItalic.ttf"; sourceTree = "<group>"; };
 		DB34D240F674A1868B1BC0B1 /* Cabin-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Cabin-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		DB34D29B6AA64C41DF036BC3 /* LXStoryboards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXStoryboards.m; sourceTree = "<group>"; };
+		DB34D2B8F07ACF1F17750473 /* LXTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXTableView.h; sourceTree = "<group>"; };
 		DB34D2CCDD80F4EBD33F8987 /* Cabin-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Cabin-BoldItalic.ttf"; sourceTree = "<group>"; };
 		DB34D310535F4D17229CF90F /* LXPeripheralService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXPeripheralService.m; sourceTree = "<group>"; };
 		DB34D45F8175FAFBB25309B4 /* LXTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LXTableViewCell.m; path = "ble-manager/Views/LXTableViewCell.m"; sourceTree = SOURCE_ROOT; };
+		DB34D467156B45C2C6EDBA6E /* LXTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXTableView.m; sourceTree = "<group>"; };
 		DB34D4A3828E12255F598190 /* Cabin-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Cabin-Italic.ttf"; sourceTree = "<group>"; };
 		DB34D4D069CDD408FAAC1FF9 /* Lato-Lig.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Lato-Lig.ttf"; sourceTree = "<group>"; };
 		DB34D4FD545AC9C8FC37A6E5 /* LXPeripheralService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXPeripheralService.h; sourceTree = "<group>"; };
@@ -180,12 +197,15 @@
 		DB34D78ADC2B34CE133459CB /* Lato-Bol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Lato-Bol.ttf"; sourceTree = "<group>"; };
 		DB34D7C6543C3F83457B0DB8 /* LXPeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXPeripheral.h; sourceTree = "<group>"; };
 		DB34D7D26E14EB66DFDE23EF /* LXLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXLogger.m; sourceTree = "<group>"; };
+		DB34D83805289402D8AE50BE /* LXEmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXEmptyView.h; sourceTree = "<group>"; };
 		DB34D89A610061220467DDD0 /* LXPeripheralServiceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXPeripheralServiceTableViewCell.h; sourceTree = "<group>"; };
 		DB34D91D6A9A0CE386C7E1CE /* LXPeripheralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXPeripheralManager.h; sourceTree = "<group>"; };
 		DB34D946A03C4BB956210196 /* LXPeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXPeripheral.m; sourceTree = "<group>"; };
+		DB34D98C1209FF15AB7354A9 /* LXAppConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXAppConfiguration.m; sourceTree = "<group>"; };
 		DB34D9D907B789F618C4733E /* Lato-LigIta.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Lato-LigIta.ttf"; sourceTree = "<group>"; };
 		DB34DA0D5ECB5E3BDC0D83A0 /* Cabin-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Cabin-Bold.ttf"; sourceTree = "<group>"; };
 		DB34DA55525F229963A0D278 /* LXMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXMacro.h; sourceTree = "<group>"; };
+		DB34DA69683DDAE10BBC7125 /* LXAppConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXAppConfiguration.h; sourceTree = "<group>"; };
 		DB34DA8A8868465DD0B7B280 /* LXDiscoveryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXDiscoveryManager.m; sourceTree = "<group>"; };
 		DB34DA8FE87E102B88338E3B /* UIColor+XBAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+XBAdditions.m"; sourceTree = "<group>"; };
 		DB34DAA7EB840C38DC960753 /* LXPeripheralHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXPeripheralHeaderViewController.m; sourceTree = "<group>"; };
@@ -195,6 +215,7 @@
 		DB34DB82EBC071DEADF61413 /* Cabin-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Cabin-Medium.ttf"; sourceTree = "<group>"; };
 		DB34DBAD5AB6F21EC3557396 /* Lato-HaiIta.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Lato-HaiIta.ttf"; sourceTree = "<group>"; };
 		DB34DBAE1655D3A7FD0A300E /* Lato-Hai.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Lato-Hai.ttf"; sourceTree = "<group>"; };
+		DB34DBB5AA022DBFB2549330 /* LXEmptyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LXEmptyView.xib; sourceTree = "<group>"; };
 		DB34DBF3079AFD6B3338D37A /* LXPeripheralServicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXPeripheralServicesViewController.h; sourceTree = "<group>"; };
 		DB34DC1BF3AC426BE98FEECA /* LXScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXScanViewController.h; sourceTree = "<group>"; };
 		DB34DC64200F3138E1B0D329 /* LXConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXConstant.h; sourceTree = "<group>"; };
@@ -297,10 +318,13 @@
 				DB34DEFE42A72139E6315585 /* LXLogging.h */,
 				DB34D0B0352F2F5821D17E30 /* LXLogger.h */,
 				DB34DC64200F3138E1B0D329 /* LXConstant.h */,
-				541E0C4818A6647D00825463 /* Main_iPad.storyboard */,
-				541E0C4518A6647D00825463 /* Main_iPhone.storyboard */,
+				541E0C4818A6647D00825463 /* MainStoryboard~iPad.storyboard */,
+				541E0C4518A6647D00825463 /* MainStoryboard~iPhone.storyboard */,
 				DB34DAAEC3C300D5115F9989 /* LXConstant.m */,
 				DB34DBA6EDA91DADD343F12A /* Services */,
+				DB34D98C1209FF15AB7354A9 /* LXAppConfiguration.m */,
+				DB34DA69683DDAE10BBC7125 /* LXAppConfiguration.h */,
+				DB34D1BA5DD68C6FA14221D7 /* Storyboards */,
 			);
 			path = "ble-manager";
 			sourceTree = "<group>";
@@ -340,6 +364,7 @@
 				547DE4BE18A7C482000EFAFD /* Graphics */,
 				DB34D196FC65CD3A75BDA51A /* Fonts */,
 				DB34D3C365613208195000C2 /* Data */,
+				54D27E4F18BFEF7B00C1D203 /* Settings.bundle */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -347,6 +372,8 @@
 		547DE4BE18A7C482000EFAFD /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				54D27E4B18BFEA5300C1D203 /* no-data.png */,
+				54D27E4C18BFEA5300C1D203 /* no-data@2x.png */,
 				547DE4BF18A7C482000EFAFD /* progress.png */,
 				547DE4C018A7C482000EFAFD /* progress@2x.png */,
 				547DE4C118A7C482000EFAFD /* wave.png */,
@@ -379,6 +406,15 @@
 				DB34D240F674A1868B1BC0B1 /* Cabin-SemiBoldItalic.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DB34D1BA5DD68C6FA14221D7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DB34D0552AA5345B3580F5B2 /* LXStoryboards.h */,
+				DB34D29B6AA64C41DF036BC3 /* LXStoryboards.m */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		DB34D262414CFFA1E28BAE9E /* ViewControllers */ = {
@@ -462,6 +498,11 @@
 				DB34D0B6437882D38F4D2390 /* LXPeripheralViewCell.m */,
 				DB34D07160DE3A54B1DFB61C /* LXPeripheralViewCell.h */,
 				DB34D4337776B275B8D1FB09 /* Cells */,
+				DB34D467156B45C2C6EDBA6E /* LXTableView.m */,
+				DB34D2B8F07ACF1F17750473 /* LXTableView.h */,
+				DB34DBB5AA022DBFB2549330 /* LXEmptyView.xib */,
+				DB34D83805289402D8AE50BE /* LXEmptyView.h */,
+				DB34D1BFF729D5B5028897F9 /* LXEmptyView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -474,11 +515,12 @@
 			buildConfigurationList = 541E0C6518A6647E00825463 /* Build configuration list for PBXNativeTarget "ble-manager" */;
 			buildPhases = (
 				C65F39BBC3E1455E8881E193 /* Check Pods Manifest.lock */,
+				54D27E5118BFEFF700C1D203 /* Increment Build Number */,
 				541E0C2C18A6647D00825463 /* Sources */,
 				541E0C2D18A6647D00825463 /* Frameworks */,
 				541E0C2E18A6647D00825463 /* Resources */,
 				7382CE47FE5B4A88A50BF2BA /* Copy Pods Resources */,
-				5423D13C18A6654800297AC4 /* ShellScript */,
+				5423D13C18A6654800297AC4 /* Setup Crashlytics */,
 			);
 			buildRules = (
 			);
@@ -548,25 +590,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				541E0C4A18A6647D00825463 /* Main_iPad.storyboard in Resources */,
 				547DE4C418A7C482000EFAFD /* progress@2x.png in Resources */,
 				541E0C4F18A6647D00825463 /* Images.xcassets in Resources */,
+				54D27E4D18BFEA5300C1D203 /* no-data.png in Resources */,
 				547DE4BB18A7A100000EFAFD /* LXPeripheralView.xib in Resources */,
 				547DE4C318A7C482000EFAFD /* progress.png in Resources */,
 				547DE4C518A7C482000EFAFD /* wave.png in Resources */,
 				547DE4C618A7C482000EFAFD /* wave@2x.png in Resources */,
-				541E0C4718A6647D00825463 /* Main_iPhone.storyboard in Resources */,
 				541E0C3E18A6647D00825463 /* InfoPlist.strings in Resources */,
 				DB34DFA8FDFD16A29182BA53 /* Lobster.ttf in Resources */,
 				DB34D8F776A8D0938B4FB3CB /* Lato-Bla.ttf in Resources */,
 				DB34D414B52329EC12A4AB89 /* Lato-Bol.ttf in Resources */,
 				DB34D460865F2F464DAB9204 /* Lato-Hai.ttf in Resources */,
 				DB34DFC2C4592C6D93EBB405 /* Lato-Lig.ttf in Resources */,
+				54D27E4E18BFEA5300C1D203 /* no-data@2x.png in Resources */,
 				DB34DFAC0018695C8F3B9A6C /* Lato-Reg.ttf in Resources */,
 				DB34D73FB6F265F8908553C3 /* Cabin-Bold.ttf in Resources */,
 				DB34DD7AE34759EEBCF509FF /* Lato-BlaIta.ttf in Resources */,
 				DB34D315DE174A76C7B9F1E2 /* Lato-BolIta.ttf in Resources */,
 				DB34D2D4A96998D091AF6350 /* Lato-HaiIta.ttf in Resources */,
+				54D27E5218BFF04100C1D203 /* MainStoryboard~iPad.storyboard in Resources */,
+				54D27E5318BFF04100C1D203 /* MainStoryboard~iPhone.storyboard in Resources */,
 				DB34D81C8BC1F75A6DAA86B8 /* Lato-LigIta.ttf in Resources */,
 				DB34DBEE08B04B8874860E0A /* Lato-RegIta.ttf in Resources */,
 				DB34DD4071C66B66F8105526 /* Cabin-Italic.ttf in Resources */,
@@ -577,6 +621,8 @@
 				DB34DF555B61D61648B31044 /* Cabin-MediumItalic.ttf in Resources */,
 				DB34D546E488147A4A5B4269 /* Cabin-SemiBoldItalic.ttf in Resources */,
 				DB34D97D33009FB033A656D0 /* services.json in Resources */,
+				54D27E5018BFEF7B00C1D203 /* Settings.bundle in Resources */,
+				DB34D5901074495C109A841B /* LXEmptyView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,18 +687,33 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		5423D13C18A6654800297AC4 /* ShellScript */ = {
+		5423D13C18A6654800297AC4 /* Setup Crashlytics */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Setup Crashlytics";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "./Crashlytics.framework/run 48e99a586053e4194936d79b6126ad23e9de4cc7 df001d25f888a326dd6732d40433c1d23dce0058f0cf30bce17f786977783353";
+		};
+		54D27E5118BFEFF700C1D203 /* Increment Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Increment Build Number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\n\nif [ \"_$BUILD_NUMBER\" != \"_\" ]; then\n\necho \"Incrementing build number (CI Script only)\"\n\nbuildPlist=\"${PROJECT_DIR}/${INFOPLIST_FILE}\"\necho \"BuildPlist: $buildPlist\"\n\nCFBundleVersion=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$buildPlist\")\necho \"CFBundleVersion: $CFBundleVersion\"\n\necho \"CFBundleVersion Increment: $BUILD_NUMBER\"\n\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $BUILD_NUMBER\" \"$buildPlist\"\n\nfi\n";
 		};
 		7382CE47FE5B4A88A50BF2BA /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -711,6 +772,10 @@
 				DB34D885D95B1BFB604F0657 /* LXPeripheralServicesViewController.m in Sources */,
 				DB34D3EEEAE306DEF592854D /* LXPeripheralService.m in Sources */,
 				DB34D7FF593F1BC7162773AE /* LXPeripheralManager.m in Sources */,
+				DB34DFA88539018E3D3CE805 /* LXTableView.m in Sources */,
+				DB34D063E01105341B522394 /* LXEmptyView.m in Sources */,
+				DB34D1BB6CF58EA37C5E6512 /* LXAppConfiguration.m in Sources */,
+				DB34D2FE45C849554A7087A0 /* LXStoryboards.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -736,6 +801,7 @@
 				DB34D73A4B3A90C4662647C1 /* LXPeripheralServicesViewController.m in Sources */,
 				DB34DE7839033F28D4CA3FF8 /* LXPeripheralService.m in Sources */,
 				DB34DA58705BC20FEEE05DE1 /* LXPeripheralManager.m in Sources */,
+				DB34D17D4A08F9E58D7F2AD5 /* LXTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -758,20 +824,20 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		541E0C4518A6647D00825463 /* Main_iPhone.storyboard */ = {
+		541E0C4518A6647D00825463 /* MainStoryboard~iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				541E0C4618A6647D00825463 /* Base */,
 			);
-			name = Main_iPhone.storyboard;
+			name = "MainStoryboard~iPhone.storyboard";
 			sourceTree = "<group>";
 		};
-		541E0C4818A6647D00825463 /* Main_iPad.storyboard */ = {
+		541E0C4818A6647D00825463 /* MainStoryboard~iPad.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				541E0C4918A6647D00825463 /* Base */,
 			);
-			name = Main_iPad.storyboard;
+			name = "MainStoryboard~iPad.storyboard";
 			sourceTree = "<group>";
 		};
 		541E0C5E18A6647E00825463 /* InfoPlist.strings */ = {
